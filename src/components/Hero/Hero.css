@@ -1,0 +1,33 @@
+.hero__main {
+display: flex;
+justify-content: center;
+align-items: center;
+float: left;
+margin-top: 2rem;
+}
+
+.hero__text {
+font-size: 70px;
+margin-left: 4.60rem;
+margin-top: 3rem;
+line-height: 1.1;
+font-weight: 500;
+inline-size: 600px;
+}
+
+.hero__img__img {
+margin-left: -1rem;
+}
+
+.hero__span__1 {
+    color: rgb(242, 83, 83);
+}
+
+.hero__small__text {
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+.hero__img {
+    margin-top: -3rem;
+}
