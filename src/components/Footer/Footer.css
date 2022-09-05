@@ -1,0 +1,19 @@
+.footer__main {
+    border-top: 1px solid red;
+    height: 130px;  /* footer height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -2rem;
+}

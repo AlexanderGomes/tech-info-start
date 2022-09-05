@@ -103,7 +103,7 @@ section {
 body {
   line-height: 1;
   overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   margin-right: 0;
   padding-right: 0;
 }
@@ -131,3 +131,21 @@ table {
 .app__hero {
   margin-top: 5rem;
 }
+
+
+
+/* .app__main {
+width: 100%;
+height: 100vh;
+} */
+
+.app__post__main {
+  padding-top: 37rem;
+  padding-left: 4rem;
+}
+
+
+.app__footer {
+  margin-top: 15rem;
+}
+
