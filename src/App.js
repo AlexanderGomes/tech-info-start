@@ -1,6 +1,7 @@
-import { Navbar, Hero, Post, Footer } from "./components";
+import { Navbar, Footer } from "./components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
+import PostDetails from "./pages/PostDetails/Details";
 
 function App() {
   return (
@@ -9,10 +10,10 @@ function App() {
         <div className="navbar">
           <Navbar />
         </div>
-
-         <Home />
-
-         
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/post/:slug" element={<PostDetails />} />
+        </Routes>
         <div className="app__footer">
           <Footer />
         </div>
@@ -22,20 +23,3 @@ function App() {
 }
 
 export default App;
-
-{
-  /* <div className="app__main">
-<div className="navbar">
-  <Navbar />
-</div>
-<div className="app__hero">
-  <Hero />
-</div>
-<div className="app__post__main">
-  <Post />
-</div>
-<div className="app__footer">
-  <Footer />
-</div>
-</div> */
-}
