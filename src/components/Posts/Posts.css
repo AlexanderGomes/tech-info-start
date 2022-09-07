@@ -16,7 +16,7 @@
   justify-content: center;
   max-width: 1200px;
   margin-block: 2rem;
-  gap: 2rem;
+
 }
 
 .card:hover {
@@ -166,4 +166,12 @@ font-family: fantasy;
 
 .text__heading {
   font-family: fantasy;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
+  max-width: 100%;
+  margin-block: 2rem;
 }

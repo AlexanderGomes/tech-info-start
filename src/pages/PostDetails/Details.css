@@ -1,3 +1,49 @@
 .details__main {
-    margin-top: 6rem;
+    margin-top: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+.details__image {
+    width: 500px;
+}
+
+.details__desc {
+    margin-top: 2.50rem;
+    max-width: 500px;
+    line-height: normal;
+    font-size: 20px;
+}
+
+.details__tag {
+    margin-top: 1rem;
+}
+
+.details__title {
+    font-size: 30px;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    background: rgb(242, 83, 83);
+    background: rgb(242, 83, 83);
+    color: #fafafa;
+    padding: .25em .75em;
+    border-radius: 1em;
+}
+
+.tag-blue {
+    background: rgb(242, 83, 83);
+    background: rgb(242, 83, 83);
+    color: #fafafa;
+    align-self: flex-start;
+    padding: .25em .75em;
+    border-radius: 1em;
+    font-size: 1rem;
+    
+  }
+
+
+/* here */
+
+

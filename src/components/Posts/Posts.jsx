@@ -14,7 +14,9 @@ const Posts = () => {
 useEffect(() => {
   const query = '*[_type == "post"]';
   client.fetch(query).then((data) => {
-    setPost(data);
+    setPost(data.sort((p1, p2) => {
+      return new Date(p2.releaseDate) - new Date(p1.releaseDate);
+    }));
   });
 }, [])
 
@@ -57,9 +59,10 @@ useEffect(() => {
           <h1 className="text__heading">Latest Posts</h1>
         </div>
 
+<div className="row">
         {posts?.map((post) => (
-          <div class="container" key={post._id}>
           <Link to={'/post/' + post.slug.current} style={{textDecoration: 'none', color: 'black'}}>
+          <div class="container" key={post._id}>
           <div class="card">
             <div class="card__header">
               <img
@@ -83,9 +86,10 @@ useEffect(() => {
             </div>
             <button className="post__btn">Read Post</button>
           </div>
-          </Link>
         </div>
+          </Link>
         ))}
+</div>
       </div>
     </div>
   );
