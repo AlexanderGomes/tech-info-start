@@ -9,6 +9,7 @@
     position: fixed; 
     top: 0; 
     width: 100%;
+    z-index: 2;
 }
 
 .app__links__ul {
@@ -61,8 +62,18 @@
 }
 
 
-.a-tag {
+
+
+.app__link__noactive {
+text-decoration: none;
+color: black;
+}
+
+.link__home {
+    text-decoration: none;
+}
+
+.link__post {
     text-decoration: none;
     color: black;
 }
-

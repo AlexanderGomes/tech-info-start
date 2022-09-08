@@ -11,9 +11,9 @@ const Navbar = () => {
       </div>
       <div className='app__links'>
        <ul className='app__links__ul'>
-       <li className='app__link__noactive'><Link to={'/'} style={{textDecoration: 'none', color: 'black'}}>Home</Link></li>
+   <Link className='link__home' to={'/'}><li className='app__link__noactive'>Home</li></Link>
        <li className='app__link__noactive'>About</li>
-       <li className='app__link__active'>Posts</li>
+      <Link className='link__post' to={'/post'}><li className='app__link__active'>Posts</li></Link> 
        </ul>
       </div>
     </div>

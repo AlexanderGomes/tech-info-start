@@ -1,5 +1,5 @@
 import { Navbar, Footer } from "./components";
-import {Home, Details} from "./pages";
+import {Home, Details, Postmain} from "./pages";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/post/:slug" element={<Details />} />
+          <Route path="/post" element={<Postmain />} />
         </Routes>
         <div className="app__footer">
           <Footer />

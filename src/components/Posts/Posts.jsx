@@ -9,6 +9,8 @@ import { Link } from "react-router-dom";
 
 const Posts = () => {
   const [posts, setPost] = useState(null);
+  const [visible, setVisible] = useState(3)
+
 
 
 useEffect(() => {
@@ -19,6 +21,8 @@ useEffect(() => {
     }));
   });
 }, [])
+
+
 
   return (
     <div className="post__main">
@@ -60,7 +64,9 @@ useEffect(() => {
         </div>
 
 <div className="row">
-        {posts?.map((post) => (
+
+  
+        {posts?.slice(visible).map((post) => (
           <Link to={'/post/' + post.slug.current} style={{textDecoration: 'none', color: 'black'}}>
           <div class="container" key={post._id}>
           <div class="card">
@@ -89,7 +95,16 @@ useEffect(() => {
         </div>
           </Link>
         ))}
+
 </div>
+      </div>
+      <div>
+        
+      </div>
+      <div className="btn__div">
+
+<button className="button-86" role="button" onClick={() => setVisible()}>See More</button>
+
       </div>
     </div>
   );
