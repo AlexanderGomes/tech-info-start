@@ -9,18 +9,30 @@ import { Link } from "react-router-dom";
 
 const Posts = () => {
   const [posts, setPost] = useState(null);
+  const [post, setPosts] = useState(null);
   const [visible, setVisible] = useState(3)
 
-
+useEffect(() => {
+    const query = '*[_type == "post"]';
+    client.fetch(query).then((data) => {
+      setPost(data.sort((p1, p2) => {
+        return new Date(p2.releaseDate) - new Date(p1.releaseDate);
+      }));
+    });
+  }, [])
 
 useEffect(() => {
-  const query = '*[_type == "post"]';
+  const query = '*[tag == "techs"]';
   client.fetch(query).then((data) => {
-    setPost(data.sort((p1, p2) => {
+    setPosts(data.sort((p1, p2) => {
       return new Date(p2.releaseDate) - new Date(p1.releaseDate);
     }));
   });
 }, [])
+
+console.log(post)
+
+
 
 
 
@@ -66,7 +78,7 @@ useEffect(() => {
 <div className="row">
 
   
-        {posts?.slice(visible).map((post) => (
+        {posts?.slice(0, visible).map((post) => (
           <Link to={'/post/' + post.slug.current} style={{textDecoration: 'none', color: 'black'}}>
           <div class="container" key={post._id}>
           <div class="card">
