@@ -8,6 +8,8 @@ const Hero = () => {
     <div className='hero__text'>
      <h1>The  <span className='hero__span__1'>Best</span> Place For Programmers To <span className='hero__span__1'>Learn.</span></h1>
      <p className='hero__small__text'>Road Maps, Books, Tutorials and Much More.</p>
+
+     <a href="#contact" className='a__contact'><button className='button-85'>Contact Us</button></a>
     </div>
     <div className='hero__img'>
         <img className='hero__img__img' src={gift} alt="" />

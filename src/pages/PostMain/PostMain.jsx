@@ -16,9 +16,10 @@ const [search, setSearch] = useState("")
         return new Date(p2.releaseDate) - new Date(p1.releaseDate);
       }));
     });
-  }, [setPosts])
-  
 
+  }, [setPosts])
+
+ 
   
 
   return (
