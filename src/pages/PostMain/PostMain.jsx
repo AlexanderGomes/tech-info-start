@@ -60,7 +60,8 @@ const [search, setSearch] = useState("")
               <span class="tag tag-blue">{post.tag}</span>
               <h4>{post.title}</h4>
               <p>
-              {post.details.slice(0,60)}
+              {post.details.slice(0,60)} 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus quis harum voluptate reiciendis nam quod possimus debitis nobis ex! Libero commodi sint eum error nulla sapiente similique tempora molestias, doloremque amet totam culpa ab necessitatibus pariatur cupiditate vero dolorem blanditiis, accusamus laudantium aperiam! Recusandae perspiciatis ab quo architecto, incidunt quasi tempore consequuntur soluta? Consequatur modi sed voluptate similique numquam.
               </p>
             </div>
             <div class="card__footer">
