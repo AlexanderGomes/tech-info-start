@@ -8,8 +8,8 @@ import searching from "../../assets/looking.gif";
 import { Link } from "react-router-dom";
 
 const Posts = () => {
-  const [posts, setPost] = useState(null);
   const [post, setPosts] = useState(null);
+  const [posts, setPost] = useState(null);
   const [mern, setMern] = useState(null);
   const [visible, setVisible] = useState(3);
   const [visibleSecond, setVisibleSecond] = useState(3);
@@ -37,6 +37,7 @@ const Posts = () => {
     });
   }, []);
 
+  console.log(post)
   useEffect(() => {
     const query = '*[tag == "tech"]';
     client.fetch(query).then((data) => {
