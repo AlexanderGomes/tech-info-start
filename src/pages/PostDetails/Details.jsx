@@ -28,7 +28,7 @@ if(!posts) return  <div className='loading lds-hourglass'></div>
      <div className='details__img'>
        <img className='details__image' src={urlFor(posts.imgUrl)} alt="" />
      </div>
-     <div className='details__tag'>``
+     <div className='details__tag'>
       <p className='details__tag tag-blue'>{posts.tag}</p>
      </div>
      <div className='details__desc'>
