@@ -77,3 +77,10 @@ color: black;
     text-decoration: none;
     color: black;
 }
+
+.app__link__noactive {
+    font-size: 20px;
+}
+.app__link__active {
+    font-size: 20px;
+}

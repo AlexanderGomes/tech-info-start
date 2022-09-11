@@ -27,7 +27,7 @@ const Posts = () => {
   }, []);
 
   useEffect(() => {
-    const query = '*[tag == "techs"]';
+    const query = '*[tag == "Node.js"]';
     client.fetch(query).then((data) => {
       setPosts(
         data.sort((p1, p2) => {
@@ -39,7 +39,7 @@ const Posts = () => {
 
   console.log(post)
   useEffect(() => {
-    const query = '*[tag == "tech"]';
+    const query = '*[tag == "MERN"]';
     client.fetch(query).then((data) => {
       setMern(
         data.sort((p1, p2) => {
@@ -118,7 +118,10 @@ const Posts = () => {
                   <div class="card__body">
                     <span class="tag tag-blue">{post.tag}</span>
                     <h4>{post.title}</h4>
-                    <p>{post.details.slice(0, 60)}</p>
+                    <p>{post.details.slice(0, 60)} 
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores magni dignissimos placeat tenetur nobis cupiditate, nemo nesciunt omnis quisquam deleniti ipsa fuga rem deserunt suscipit laborum, minima dolorum aspernatur necessitatibus eum dolor est. Quasi at amet eum dolorum distinctio unde!
+
+                    </p>
                   </div>
                   <div class="card__footer">
                     <div class="user">
@@ -162,7 +165,7 @@ const Posts = () => {
                     <div class="card__body">
                       <span class="tag tag-blue">{p.tag}</span>
                       <h4>{p.title}</h4>
-                      <p>{p.details.slice(0, 60)}</p>
+                      <p>{p.details.slice(0, 60)} Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque cum velit sit aliquam vero, ex commodi a molestias quae corporis quaerat deserunt architecto sequi illo non fuga. Reprehenderit voluptate, voluptatum labore quo inventore magnam dicta eum possimus culpa consequuntur ad aliquam, iste iure ipsum distinctio ab exercitationem eius quaerat quod deleniti. Eos vero quasi ducimus amet doloribus doloremque illum inventore!</p>
                     </div>
                     <div class="card__footer">
                       <div class="user">
@@ -211,7 +214,7 @@ const Posts = () => {
                     <div class="card__body">
                       <span class="tag tag-blue">{m.tag}</span>
                       <h4>{m.title}</h4>
-                      <p>{m.details.slice(0, 60)}</p>
+                      <p>{m.details.slice(0, 60)} Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero maiores fugit labore minus voluptate asperiores sint nostrum! Corrupti tempore doloremque, laudantium iusto error quasi deleniti, repellat porro magnam omnis, optio saepe esse. Amet at, eaque maiores vitae voluptates tenetur laborum deleniti quia praesentium doloribus sed expedita nostrum, repudiandae dignissimos. Delectus fugiat quis quibusdam vitae ipsum accusamus eveniet dolor repellendus?</p>
                     </div>
                     <div class="card__footer">
                       <div class="user">

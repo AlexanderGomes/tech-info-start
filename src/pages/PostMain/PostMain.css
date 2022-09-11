@@ -53,6 +53,13 @@
     justify-content: space-evenly;
     max-width: 100%;
     margin-block: 2rem;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin-block: 3rem;
+    margin-left: 8rem;
+    gap: 3rem;
   }
 
   .a {

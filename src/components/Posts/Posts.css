@@ -264,8 +264,10 @@ align-items: center;
   display: flex;
   flex-wrap: wrap; 
   justify-content: space-evenly;
-  max-width: 100%;
+  max-width: 80%;
   margin-block: 3rem;
+  margin-left: 8rem;
+  gap: 3rem;
 }
 
 .tech__name {
